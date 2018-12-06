@@ -1,0 +1,29 @@
+<div ng-controller="loginCtrl">
+  <div class="form-group row">
+    <label class="col-md-2" for="username">Username :</label>
+    <div class="col-md-4">
+      <div class="input-group">
+        <span class="input-group-addon ">
+          <span class="glyphicon glyphicon-user"></span>
+        </span>
+        <input class="form-control" id="username" type="text" name="username" ng-model="username" placeholder="Enter username">
+      </div>
+    </div>
+
+  </div>
+  <div class="form-group row">
+    <label class="col-md-2">Password :</label>
+    <div class="col-md-4">
+      <div class="input-group">
+        <input [attr.type]="showPassword? 'text' : 'password'" class="form-control" id="pass" name="password" ng-model="password" placeholder="Enter password"> showPass -{{showPassword}}
+        <span class="input-group-btn">
+          <button class="btn btn-secondary" ng-click="showPass()">
+            <span ng-if="showPassword" class="glyphicon glyphicon-eye-open"></span>
+            <span ng-if="!showPassword" class="glyphicon glyphicon-eye-close"></span>
+          </button>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>{{username}}&nbsp;{{password}}</div>
+</div>
